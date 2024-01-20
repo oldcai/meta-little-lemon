@@ -26,6 +26,15 @@
   border-radius: 1rem;
 }
 
+.our-story-chefs img:first-child {
+    transform: translateX(100px) translateY(200px);
+}
+
+.our-story-chefs img:last-child {
+  z-index: 10;
+}
+
+
 /*-- Media queries ------------------------------------------------------*/
 
 @media (max-width: 915px) {
@@ -56,4 +65,9 @@
 .our-story-chefs img {
   max-width: 100%;
 }
+
+.our-story-chefs img:first-child {
+    transform: translateX(0px) translateY(0px);
+}
+
 }
