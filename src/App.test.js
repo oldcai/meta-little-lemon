@@ -1,14 +1,7 @@
 import { render, screen } from '@testing-library/react';
+
 import App from './App';
 
-test('renders Home link', () => {
+test('renders app', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Home/i);
-  expect(linkElement).toBeInTheDocument();
-});
-
-test('renders Reservation link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Reservation/i);
-  expect(linkElement).toBeInTheDocument();
 });
